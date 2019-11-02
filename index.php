@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Login Form in HTML5 and CSS3</title>
+	<title> Project Portal</title>
 	<link rel="stylesheet" a href="css\style.css">
 	<link rel="stylesheet" a href="css\font-awesome.min.css">
 </head>
