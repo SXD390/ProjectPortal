@@ -17,7 +17,7 @@
 				<input type="text" name="username" placeholder="Enter the User Name"/>	
 			</div>
 			<div class="form-input">
-				<input type="password" name="password" placeholder="password"/>
+				<input type="password" name="password" placeholder="Enter password"/>
 			</div>
 				<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
 		</form>
