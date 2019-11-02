@@ -1,34 +1,45 @@
-body{
+html, body{
 	margin: 0 auto;
-	background-image: url("../img/background.jpg");
-	background-color: coral;
+	height: 100vh;	
+	background-color: orange;
 	background-repeat: no-repeat;
+	background-image: url('/img/background.jpg');
 	background-size: 100% 720px;
+	font-family: 'Nunito', sans-serif;
 }
  
 .container{
 	width: 500px;
 	height: 550px;
 	text-align: center;
-	margin: 0 auto;
-	background-color: rgba(44, 62, 80,0.7);
-	margin-top: 160px;
+	margin: 0 auto;	
+	margin-top: 80px;
 }
  
 .container img{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin-top: -60px;
 }
  
-input[type="text"],input[type="password"]{
-	margin-top: 30px;
-	height: 45px;
-	width: 300px;
-	font-size: 18px;
+input[type="text"]{
+	margin-top: 33px;
+	height: 35px;
+	width: 200px;
+	font-size: 15px;
+	margin-bottom: 3px;
+	background-color: #fff;
+	padding-left: 45px;
+}
+
+input[type="password"]{
+	margin-top: 3px;
+	height: 35px;
+	width: 200px;
+	font-size: 15px;
 	margin-bottom: 20px;
 	background-color: #fff;
-	padding-left: 40px;
+	padding-left: 45px;
 }
  
 .form-input::before{
@@ -37,12 +48,13 @@ input[type="text"],input[type="password"]{
 	padding-left: 07px;
 	padding-top: 40px;
 	position: absolute;
-	font-size: 35px;
+	font-size: 27px;
 	color: #2980b9; 
 }
  
 .form-input:nth-child(2)::before{
 	content: "\f023";
+	margin-top: 2px;
 }
  
 .btn-login{
