@@ -19,7 +19,7 @@ body{
 .container img{
 	width: 100px;
 	height: 100px;
-	margin-top: -60px;
+	margin-top: -85px;
 }
  
 input[type="text"]{
@@ -32,10 +32,23 @@ input[type="text"]{
 	padding-left: 45px;
 }
 
+.email {
+    margin-top: -20px;
+}
+
 input[type="password"]{
-	margin-top: 33px;
+	margin-top: 15px;
 	height: 35px;
 	width: 200px;
+	font-size: 15px;
+	margin-bottom: -20px;
+	background-color: #fff;
+	padding-left: 45px;
+}
+.list{
+    margin-top: 15px;
+	height: 40px;
+	width: 250px;
 	font-size: 15px;
 	margin-bottom: 20px;
 	background-color: #fff;
