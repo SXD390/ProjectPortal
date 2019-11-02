@@ -18,7 +18,8 @@ if(isset($_POST['username'])) {
 	$result = mysqli_query($conn,$sql);
 
 	if(mysqli_num_rows($result)==1){
-		echo "<h1>Logged in Successfully<h1>";
+		//echo "<h1>Logged in Successfully<h1>";
+		header('location: ./a1.html');
 		
 	}
 	else{
