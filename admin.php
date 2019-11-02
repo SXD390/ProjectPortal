@@ -13,9 +13,8 @@
 	<div class="container">
 		<h1>Welcome to Admin Portal</h1><br><br><br><br>
 		<img src="img/img.png"/>
-		<p id="login_status">
-</p>
-		<form method="POST" action ="modules/verify_login.php">
+		<p id="login_status"></p>
+		<form method="POST" action ="modules/verify_login.php" id="form">
 			<div class="form-input">
 				<input type="text" name="username" placeholder="Enter Username"/>	
 			</div> <br>

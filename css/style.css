@@ -13,7 +13,7 @@ html, body{
 	height: 550px;
 	text-align: center;
 	margin: 0 auto;	
-	margin-top: 80px;
+	margin-top: 20px;
 }
  
 .container img{
@@ -62,4 +62,6 @@ input[type="password"]{
 	border: none;
 	background-color: #27ae60;
 	color: #fff;
+	
 }
+
