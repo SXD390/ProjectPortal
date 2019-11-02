@@ -19,12 +19,12 @@ if(isset($_POST['username'])) {
 
 	if(mysqli_num_rows($result)==1){
 		//echo "<h1>Logged in Successfully<h1>";
-		header('location: ./a1.html');
+		header('location: ../admin.html');
 		
 	}
 	else{
 		header("location: ../index.php");
-		echo "<script type='text/javascript'> document.getElementById('login_status').innerHTML='Invalid Credentials';</script>";
+		//echo "<script type='text/javascript'> document.getElementById('login_status').innerHTML='Invalid Credentials';</script>";
 	}
 }
 
