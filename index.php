@@ -15,10 +15,10 @@
 		<form method="POST" action ="modules/verify_login.php">
 			<div class="form-input">
 				<input type="text" name="username" placeholder="Enter the User Name"/>	
-			</div>
+			</div> <br>
 			<div class="form-input">
 				<input type="password" name="password" placeholder="Enter password"/>
-			</div>
+			</div> <br>
 				<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
 		</form>
 	</div>
