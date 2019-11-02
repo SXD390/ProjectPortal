@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/BMSIT_1.ico">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-	<link rel="stylesheet" a href="css\style.css">	
+	<link rel="stylesheet" a href="css/style.css">	
 </head>
 
 <body>
