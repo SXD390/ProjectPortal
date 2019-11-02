@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Project Portal</title>
+        <link rel="icon" href="../img/BMSIT_1.ico">
+        <style rel="stylesheet" type="text/css">
+        
+        body{
+	        margin: 0 auto;
+            background-image: url("../img/background.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 720px;
+        }
+ 
+        .container{
+            width: 500px;
+            height: 50px;
+            font-size: 30px;
+            color:chocolate;
+            text-shadow: 0 0 2px #000;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgba(44, 62, 80,0.7);
+            margin-top: 60px;
+            }
+        .input_btn {
+            background-color: #000; /* Green */
+            border:chocolate;
+            border-width: 80px;
+            color: chocolate;
+            padding: 25px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+            }
+        .input_btn:hover{
+            background-color:chocolate; /* Black */
+            border:black;
+            border-width: 80px;
+            color: black;
+            padding: 25px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 23px;
+
+        }
+        .input_btn:active{
+            background-color:chocolate; /* Black */
+            border:black;
+            border-width: 80px;
+            color: black;
+            padding: 25px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 29px;
+
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Welcome Admin</h2>
+        
+        <table width="500px">
+            <tr>
+                <td>
+                    <form method="POST" action="#">
+                        <input class="input_btn" type="button" value="Manage Teacher" onclick="navi_teach()">
+                    </form>
+                </td>
+                <td>
+                    <form method="POST" action="#">
+                        <input class="input_btn" type="button" value="Manage Student" onclick="navi_student()">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    
+    <script type="text/javascript">
+        function navi_teach(){
+            window.location.assign("teacher_admin.html");
+        }
+        function navi_student(){
+            window.location.assign("student_admin.html");
+        }
+        
+    </script>
+
+</html>

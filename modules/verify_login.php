@@ -19,7 +19,7 @@ if(isset($_POST['username'])) {
 
 	if(mysqli_num_rows($result)==1){
 		//echo "<h1>Logged in Successfully<h1>";
-		header('location: ../admin.html');
+		header('location: admin.html');
 		
 	}
 	else{
