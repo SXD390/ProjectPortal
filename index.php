@@ -10,8 +10,8 @@
 	<div class="container">
 		<h1>Welcome to Project Portal</h1><br><br><br><br>
 		<img src="img/img.png"/>
-		<div id="login_status">
-		</div>
+		<p id="login_status">
+</p>
 		<form method="POST" action ="modules/verify_login.php">
 			<div class="form-input">
 				<input type="text" name="username" placeholder="Enter the User Name"/>	
