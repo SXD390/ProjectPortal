@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Project Portal</title>
+	<title> Login Form in HTML5 and CSS3</title>
 	<link rel="stylesheet" a href="css\style.css">
 	<link rel="stylesheet" a href="css\font-awesome.min.css">
 </head>
@@ -12,7 +12,7 @@
 		<img src="img/img.png"/>
 		<div id="login_status">
 		</div>
-		<form method="$POST" action ="modules/verify_login.php">
+		<form method="POST" action ="modules/verify_login.php">
 			<div class="form-input">
 				<input type="text" name="username" placeholder="Enter the User Name"/>	
 			</div>

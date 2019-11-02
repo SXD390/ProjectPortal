@@ -6,7 +6,7 @@ $user="root";
 $password="";
 $db="demo";
 
-mysqli_connect($host,$user,$password,$db);
+$conn = mysqli_connect($host,$user,$password,$db);
 //mysql_select_db($db);
 
 if(isset($_POST['username'])) {
@@ -15,10 +15,10 @@ if(isset($_POST['username'])) {
 
 	$sql="select * from loginform where user='".$uname."' AND Pass='".$password."' LIMIT 1";
 
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 
-	if(mysql_num_rows($result)==1){
-		echo "Logged in Successfully";
+	if(mysqli_num_rows($result)==1){
+		echo "<h1>Logged in Successfully<h1>";
 		
 	}
 	else{
