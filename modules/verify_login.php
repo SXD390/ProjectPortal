@@ -23,8 +23,11 @@ if(isset($_POST['username'])) {
 		
 	}
 	else{
-		echo "Invalid Credentials";
-		exit();
+		echo '<script type="text/javascript">';
+		echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
+		echo '</script>';
+		header('location: ../index.php');
+		
 	}
 }
 
