@@ -23,7 +23,7 @@ if(isset($_POST['username'])) {
 		
 	}
 	else{
-		header("location: ../index.php");
+		header("location: ../index.html");
 		//echo "<script type='text/javascript'> document.getElementById('login_status').innerHTML='Invalid Credentials';</script>";
 	}
 }
