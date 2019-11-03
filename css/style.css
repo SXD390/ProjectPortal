@@ -62,6 +62,7 @@ input[type="password"]{
 	border: none;
 	background-color: #27ae60;
 	color: #fff;
-	
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;	
 }
 
