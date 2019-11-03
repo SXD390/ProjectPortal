@@ -58,35 +58,15 @@
             <img src="../img/img.png"/>		
             <div>
                 <h3>Project Entry</h3>
-                <form method="POST" action="admin_add_projects.php">
+                <form method="POST" action="admin_add_projects_backend.php">
                     <input type="text" placeholder="Enter Project ID" name="project_id" id="pid"/>
                     <input type="text" placeholder="Enter Project Name" name="project_name" id="pname"/>
                     <input type="text" placeholder="Enter Subject Code" name="subject_code" id="sid"/><br>
-                    <input type="submit"/>
+                    <input type="submit" onclick="clear_entry()"/>
                 </form>
             </div>
         </div>
     </body>
-    <?php
-        $host = "localhost";
-        $user="root";
-        $password="";
-        $db="demo";
-        $project_id = $_POST['project_id'];
-        $project_name = "'".$_POST['project_name']."'";
-        $subject_code = "'".$_POST['subject_code']."'";
-        $conn = mysqli_connect($host,$user,$password,$db);
-        $sql = 'insert into projects VALUES ('.$project_id.','.$project_name.','.$subject_code.')';
-
-        if ($conn->query($sql) === TRUE) {
-            echo "<h2><em>New record created successfully</em></h2>";
-            echo "<script type='text/javascript'>clear_entry();</script>";
-            $_POST = array();
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        }    
-
-    ?>
     <script type="text/javascript">
         function clear_entry()
         {
