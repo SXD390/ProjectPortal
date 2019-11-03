@@ -1,0 +1,3 @@
+SELECT s.usn,s.name,p.project_name from student s,projects p,works_on w where w.usn=s.usn and w.project_id = p.project_id
+
+
