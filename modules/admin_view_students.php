@@ -29,6 +29,7 @@
             background-color: black;
             color:chocolate;
             text-shadow: 0 0 2px #000;
+
         }
         tr,th{
             border:solid black;
@@ -62,11 +63,11 @@
             Student ~ Project Pairings   
         </div><br><br>
         <table>
-            <tr class="th_custom">
+            
                 <th class="th_custom">
-                    <div>
+                    <div >
                         <h2>Students Paired with Projects</h2>
-                            <table class="table_modi"> 
+                            <table align="center"> 
                                 <tr>
                                     <th>USN</th>
                                     <th>Name</th>
@@ -108,7 +109,6 @@
                             ?>
                             </table>
                 </th>
-            </tr>
         </table>
     </body>
 
