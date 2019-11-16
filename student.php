@@ -13,6 +13,7 @@
 	<div class="container">
 		<h1>Welcome to Student Portal</h1><br><br><br><br>
 		<img src="img/img.png"/>		
+		
 		<form method="POST" action ="modules/verify_login.php" id="form">
 			<div class="form-input">
 				<input type="text" name="name" placeholder="Student Name"/>	
@@ -30,16 +31,16 @@
 						$Available_projects = mysqli_query(  $conn,$query );
 
 				?>
-                <select name="project" class="list">
-					<option>---Select subject---</option>
-	
-						<?php while($subjectData = mysqli_fetch_array($Available_projects)){ ?>
-						
-						<option value="<?php echo $subjectData['project_name'];?>"> <?php echo $subjectData['project_name'];?> </option>
+					<br><br>
+					<select name="project" class="form-control" onfocus='this.size=8;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+						<option>---Select subject---</option>
+		
+							<?php while($subjectData = mysqli_fetch_array($Available_projects)){ ?>
+							
+							<option value="<?php echo $subjectData['project_name'];?>"> <?php echo $subjectData['project_name'];?> </option>
 
-						<?php }?> 
-                </select> <br>
-			
+							<?php }?> 
+					</select> <br><br><br><br><br>			
 				<input type="submit" class="btn-login" type="submit" value="SUBMIT" />
 		</form>
 	</div>

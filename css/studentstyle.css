@@ -64,6 +64,5 @@ input[type="password"]{
 }
 select {
 	width: 500px;
-	
+	height: 250px;
 }
-
