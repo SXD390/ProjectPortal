@@ -20,12 +20,24 @@
                 <input type="password" name="usn" placeholder="Student USN"/> <br>
 
                 <input type="text" class = "email" name="email" placeholder="Student Email ID"/> <br>
-                
+                <?php
+						$hostname = "localhost";
+						$username = "root";
+						$password = "";
+						$dbname = "demo";
+						$conn = mysqli_connect($hostname, $username, $password,$dbname);
+						$query = "SELECT project_name FROM projects";
+						$Available_projects = mysqli_query(  $conn,$query );
+
+				?>
                 <select name="project" class="list">
-                    <option value="a">Project A</option>
-                    <option value="b">Project B</option>
-                    <option value="c">Project C</option>
-                    <option value="d">Project D</option>
+					<option>---Select subject---</option>
+	
+						<?php while($subjectData = mysqli_fetch_array($Available_projects)){ ?>
+						
+						<option value="<?php echo $subjectData['project_name'];?>"> <?php echo $subjectData['project_name'];?> </option>
+
+						<?php }?> 
                 </select> <br>
 			
 				<input type="submit" class="btn-login" type="submit" value="SUBMIT" />
