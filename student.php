@@ -26,7 +26,7 @@
 						$password = "";
 						$dbname = "demo";
 						$conn = mysqli_connect($hostname, $username, $password,$dbname);
-						$query = "SELECT project_name FROM projects";
+						$query = "SELECT project_name from projects where project_id not in (select project_id from works_on)";
 						$Available_projects = mysqli_query(  $conn,$query );
 
 				?>

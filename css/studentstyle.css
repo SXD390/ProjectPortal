@@ -62,4 +62,8 @@ input[type="password"]{
 	color: #fff;
 	
 }
+select {
+	width: 500px;
+	
+}
 
