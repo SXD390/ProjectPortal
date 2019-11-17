@@ -18,7 +18,7 @@
 			<div class="form-input">
 				<input type="text" name="name" placeholder="Student Name"/>	
             			
-                <input type="password" name="usn" placeholder="Student USN"/> <br>
+                <input type="text" name="usn" placeholder="Student USN"/> <br>
 
                 <input type="text" class = "email" name="email" placeholder="Student Email ID"/> <br>
                 <?php
@@ -32,7 +32,7 @@
 
 				?>
 					<br><br>
-					<select name="project" class="form-control" onfocus='this.size=8;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+					<select name="project" class="form-control" onfocus='this.size=8;'   onchange='this.size=4; this.blur();'>
 						<option>---Select subject---</option>
 		
 							<?php while($subjectData = mysqli_fetch_array($Available_projects)){ ?>
