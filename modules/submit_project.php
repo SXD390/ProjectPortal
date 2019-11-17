@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
             $host = "localhost";
             $user="root";
@@ -12,4 +13,12 @@
             }
 
 
+=======
+<?php
+
+
+
+
+
+>>>>>>> 19ec0775b51baa87e33807cd68041f8a08f9f6c9
 ?>
