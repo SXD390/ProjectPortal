@@ -79,7 +79,7 @@
                                 $password="";
                                 $db="demo";                
                                 $conn = mysqli_connect($host,$user,$password,$db);
-                                $sql = "SELECT s.usn,s.name,p.project_name from student s,projects p,works_on w where w.usn=s.usn and w.project_id = p.project_id";
+                                $sql = "SELECT s.usn,s.name,p.project_name from student s,projects p,works_on w where w.usn=s.usn and w.project_id = p.project_id order by p.project_name";
                                 $result = $conn->query($sql);
                                 while($row = $result->fetch_assoc()) {
                                     echo "<tr><th>".$row["usn"]."</th><th>".$row["name"]."</th><th>".$row["project_name"]."</th></tr>";

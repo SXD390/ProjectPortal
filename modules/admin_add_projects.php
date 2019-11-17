@@ -46,7 +46,7 @@
                 font-size: 29px;
             }
             .img {
-                margin-bottom: 50px;;
+                margin-bottom: 50px;
             }        
 
         </style>
@@ -73,7 +73,6 @@
             document.getElementById("pid").innerHTML="";
             document.getElementById("pname").innerHTML="";
             document.getElementById("sid").innerHTML="";
-            alert("Entered Successfully!");
         }
     </script>
 

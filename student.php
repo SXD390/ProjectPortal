@@ -14,7 +14,7 @@
 		<h1>Welcome to Student Portal</h1><br><br><br><br>
 		<img src="img/img.png"/>		
 		
-		<form method="POST" action ="modules/verify_login.php" id="form">
+		<form method="POST" action ="modules/submit_project.php" id="form">
 			<div class="form-input">
 				<input type="text" name="name" placeholder="Student Name"/>	
             			
