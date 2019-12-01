@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2019 at 11:24 AM
+-- Generation Time: Dec 01, 2019 at 04:24 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -79,24 +79,48 @@ INSERT INTO `projects` (`project_id`, `project_name`, `subject_code`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `sloginform`
+--
+
+CREATE TABLE `sloginform` (
+  `ID` varchar(5) NOT NULL,
+  `User` varchar(10) DEFAULT NULL,
+  `Pass` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sloginform`
+--
+
+INSERT INTO `sloginform` (`ID`, `User`, `Pass`) VALUES
+('101', 'student', 'student');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student`
 --
 
 CREATE TABLE `student` (
   `usn` varchar(10) NOT NULL,
   `name` varchar(25) NOT NULL,
-  `email` varchar(25) DEFAULT NULL
+  `email` text DEFAULT NULL,
+  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`usn`, `name`, `email`) VALUES
-('1BY15CS115', 'Harshit Gupta', 'gupta@gmail.com'),
-('1BY16CS006', 'Akshay Padesur', 'akshay@gmail.com'),
-('1BY16CS062', 'Pranav Raikote', 'pranavraikote@gmail.com'),
-('1BY16CS084', 'Sudarshan Venkatesh', 'sudarshanravi13@gmail.com');
+INSERT INTO `student` (`usn`, `name`, `email`, `password`) VALUES
+('1BY15CS115', 'Harshit Gupta', 'gupta@gmail.com', 'student'),
+('1BY16CS006', 'Akshay Padesur', 'akshay@gmail.com', 'student'),
+('1BY16CS062', 'Pranav Raikote', 'pranavraikote@gmail.com', 'student'),
+('1By16cs079', 'Shwetha', 'shwetha@bmsit.in', 'student'),
+('1By16cs083', 'Spooorthy', 'spoorthy@bmsit.in', 'domlur'),
+('1BY16CS084', 'Sudarshan Venkatesh', 'sudarshanravi13@gmail.com', 'student'),
+('1BY16CS085', 'Suman', 'suman@gmail.com', 'student'),
+('1BY16CS086', 'Sumanth NC', 'sumanthnc@gmail.com', 'student');
 
 -- --------------------------------------------------------
 
@@ -141,7 +165,7 @@ ALTER TABLE `projects`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`usn`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD UNIQUE KEY `email` (`email`) USING HASH;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
