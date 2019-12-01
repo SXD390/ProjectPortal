@@ -1,6 +1,0 @@
-SELECT s.usn,s.name,p.project_name from student s,projects p,works_on w where w.usn=s.usn and w.project_id = p.project_id
-
-
-INSERT INTO `student` (`usn`, `name`, `email`) VALUES ('1BY16CS115', 'Harshit Gupta', 'gupta@gmail.com');
-
-INSERT INTO `projects` (`project_id`, `project_name`, `subject_code`) VALUES ('1002', 'Timetable Management System', '15CS71');
