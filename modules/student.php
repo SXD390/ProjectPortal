@@ -5,13 +5,15 @@
 		<title> Student </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/BMSIT_1.ico">
+		
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-		<link rel="stylesheet" a href="../css/studentstyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/studentstyle.css">
 		<link rel="stylesheet" type="text/css" href="../css/logincss.css">
 		<link rel="stylesheet" type="text/css" href="../css/admin_dash.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap-table.css">
 		<link rel="stylesheet" type="text/css" href="../css/viewforadmin.css">
+		<link rel="stylesheet" type="text/css" href="../css/button_magic.css">
 		<script type="text/javascript" src="../js/viewStudents.js"></script>	
 	
 	</head>
@@ -84,13 +86,13 @@
 								$number_of_teammates = count($team_usn);
 								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Project ID :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$proj_id."</div></div></div><br>";
 								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Project Name :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$project_name."</div></div></div><br>";
-								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Subject Code  :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$sub_code."</div></div></div><br>";
+								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Subject Code  :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$sub_code."</div></div></div>";
 								
-								echo "<div><input class='btn_req_change' type='button' value='Request for a Change'/></div> ";
+								echo "<form method='POST' action = ''><input type='button' class='btn_req_change' value = 'Request for Change' style='vertical-align:middle'></input></form>";
 								
-								echo "<br><br><div class='h4_custom'>Details of your Team</div><br>";
+								echo "<br><div class='h4_custom'>Details of your Team</div>";
 								echo "<table class=''>";
-									echo "<tr><th>USN</th><th>Name</th><th>E-Mail</th></tr>";
+									echo "<tr><th style='font-size: 30px;'>USN</th><th style='font-size: 30px;'>Name</th><th style='font-size: 30px;'>E-Mail</th></tr>";
 									for($i=0;$i<$number_of_teammates;$i++){
 										echo "<tr><td>".$team_usn[$i]."</td><td>".$team_name[$i];
 										if($na==$team_name[$i]){

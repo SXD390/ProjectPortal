@@ -3,7 +3,12 @@
         window.location.href="student.php?uid="+id;
     }
 </script>
+<style rel="stylesheet" type="text/css">
+    th{
+        
+    }
 
+</style>
 <?php
     if(isset($_POST['sub_btn'])){
         $host = "localhost";
@@ -32,7 +37,7 @@
 	<form method="POST" >
 		<table id="myTable_1">
 			<tr>
-				<th>Project ID <button onclick="sortTable_0('myTable_1')">↑</button><button onclick="sortRTable_0('myTable_1')">↓</button> </th>
+				<th> Project ID <button onclick="sortTable_0('myTable_1')">↑</button><button onclick="sortRTable_0('myTable_1')">↓</button> </th>
 				<th> Project Title <button onclick="sortTable_1('myTable_1')">↑</button><button onclick="sortRTable_1('myTable_1')">↓</button> </th>
 				<th> Subject Code <button onclick="sortTable_2('myTable_1')">↑</button><button onclick="sortRTable_2('myTable_1')">↓</button></th>
                 <th> Potential Teamates </th>
