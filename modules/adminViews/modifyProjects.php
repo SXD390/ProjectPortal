@@ -35,6 +35,7 @@ if(!isset($_SESSION['Alogin']))
                             <a href="addStudents.php" id="side4">Add Students</a>
                             <a href="modifyStudentTeam.php" id="side5">Approve Team Changes</a>
                             <a href="#" id="side6">Modify Projects</a>
+                            <a href="modifystudent.php" id="side7">Modify Student</a>
                         </div>                  
                     </div>
                 </div>

@@ -3,13 +3,13 @@
 include_once dirname(__FILE__).'/inc/config.php';
 
 
-//--->get all projects > start
+//--->get all student > start
 if(isset($_GET['call_type']) && $_GET['call_type'] =="get")
 {
-	$q1 = app_db()->select('select * from projects');
+	$q1 = app_db()->select('select * from student');
 	echo json_encode($q1);
 }
-//--->get all projects > end
+//--->get all student > end
 
 
 
@@ -18,11 +18,11 @@ if(isset($_GET['call_type']) && $_GET['call_type'] =="get")
 if(isset($_POST['call_type']) && $_POST['call_type'] =="single_entry")
 {	
 
-	$project_id 	= app_db()->CleanDBData($_POST['project_id']);
+	$usn 	= app_db()->CleanDBData($_POST['usn']);
 	$col_name  	= app_db()->CleanDBData($_POST['col_name']); 
 	$col_val  	= app_db()->CleanDBData($_POST['col_val']);
 	
-	$tbl_col_name = array("project_id", "project_name", "subject_code", "project_id");
+	$tbl_col_name = array("usn", "name", "email", "usn");
 
 	if (!in_array($col_name, $tbl_col_name))
 	{
@@ -33,7 +33,7 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="single_entry")
 		die();
 	}
 
-	$q1 = app_db()->select("select * from projects where project_id='$project_id'");
+	$q1 = app_db()->select("select * from student where usn='$usn'");
 	if($q1 < 1) 
 	{
 		//no record found in the database
@@ -47,13 +47,13 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="single_entry")
 	{
 		//found record in the database
 		 
-		$strTableName = "projects";
+		$strTableName = "student";
 
 		$array_fields = array(
 			$col_name => $col_val,
 		);
 		$array_where = array(    
-		  'project_id' => $project_id,
+		  'usn' => $usn,
 		);
 		//Call it like this:  
 		app_db()->Update($strTableName, $array_fields, $array_where);
@@ -75,12 +75,12 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="single_entry")
 if(isset($_POST['call_type']) && $_POST['call_type'] =="row_entry")
 {	
 
-	$project_id 	= app_db()->CleanDBData($_POST['project_id']);
-	$project_id  	= app_db()->CleanDBData($_POST['project_id']); 
-	$project_name  	= app_db()->CleanDBData($_POST['project_name']); 
-	$subject_code  	= app_db()->CleanDBData($_POST['subject_code']); 	
+	$usn 	= app_db()->CleanDBData($_POST['usn']);
+	$usn  	= app_db()->CleanDBData($_POST['usn']); 
+	$name  	= app_db()->CleanDBData($_POST['name']); 
+	$email  	= app_db()->CleanDBData($_POST['email']); 	
 	
-	$q1 = app_db()->select("select * from projects where project_id='$project_id'");
+	$q1 = app_db()->select("select * from student where usn='$usn'");
 	if($q1 < 1) 
 	{
 		//no record found in the database
@@ -94,15 +94,15 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="row_entry")
 	{
 		//found record in the database
 		 
-		$strTableName = "projects";
+		$strTableName = "student";
 
 		$array_fields = array(
-			'project_id' => $project_id,
-			'project_name' => $project_name,
-			'subject_code' => $subject_code,
+			'usn' => $usn,
+			'name' => $name,
+			'email' => $email,
 		);
 		$array_where = array(    
-		  'project_id' => $project_id,
+		  'usn' => $usn,
 		);
 		//Call it like this:  
 		app_db()->Update($strTableName, $array_fields, $array_where);
@@ -124,23 +124,23 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="row_entry")
 if(isset($_POST['call_type']) && $_POST['call_type'] =="new_row_entry")
 {	
 
-	$project_id 	= app_db()->CleanDBData($_POST['project_id']);
-	$project_id  	= app_db()->CleanDBData($_POST['project_id']); 
-	$project_name  	= app_db()->CleanDBData($_POST['project_name']); 
-	$subject_code  	= app_db()->CleanDBData($_POST['subject_code']); 	
+	$usn 	= app_db()->CleanDBData($_POST['usn']);
+	$usn  	= app_db()->CleanDBData($_POST['usn']); 
+	$name  	= app_db()->CleanDBData($_POST['name']); 
+	$email  	= app_db()->CleanDBData($_POST['email']); 	
 	
-	$q1 = app_db()->select("select * from projects where project_id='$project_id'");
+	$q1 = app_db()->select("select * from student where usn='$usn'");
 	if($q1 < 1) 
 	{
 		//add new row
-		$strTableName = "projects";
+		$strTableName = "student";
 
 		$insert_arrays = array
 		(
-			'project_id' => $project_id,
-			'project_id' => $project_id,
-			'project_name' => $project_name,
-			'subject_code' => $subject_code,
+			'usn' => $usn,
+			'usn' => $usn,
+			'name' => $name,
+			'email' => $email,
 		);
 
 		//Call it like this:
@@ -161,15 +161,15 @@ if(isset($_POST['call_type']) && $_POST['call_type'] =="new_row_entry")
 if(isset($_POST['call_type']) && $_POST['call_type'] =="delete_row_entry")
 {	
 
-	$project_id 	= app_db()->CleanDBData($_POST['project_id']);	 
+	$usn 	= app_db()->CleanDBData($_POST['usn']);	 
 	
-	$q1 = app_db()->select("select * from projects where project_id='$project_id'");
+	$q1 = app_db()->select("select * from student where usn='$usn'");
 	if($q1 > 0) 
 	{
 		//found a row to be deleted
-		$strTableName = "projects";
+		$strTableName = "student";
 
-		$array_where = array('project_id' => $project_id);
+		$array_where = array('usn' => $usn);
 
 		//Call it like this:
 		app_db()->Delete($strTableName,$array_where);
