@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2019 at 06:01 AM
+-- Generation Time: Dec 01, 2019 at 04:24 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -120,8 +120,7 @@ INSERT INTO `student` (`usn`, `name`, `email`, `password`) VALUES
 ('1By16cs083', 'Spooorthy', 'spoorthy@bmsit.in', 'domlur'),
 ('1BY16CS084', 'Sudarshan Venkatesh', 'sudarshanravi13@gmail.com', 'student'),
 ('1BY16CS085', 'Suman', 'suman@gmail.com', 'student'),
-('1BY16CS086', 'Sumanth NC', 'sumanthnc@gmail.com', 'student'),
-('1BY16CS111', 'Manoj Kumar', 'manoj@bmsit.in', 'student');
+('1BY16CS086', 'Sumanth NC', 'sumanthnc@gmail.com', 'student');
 
 -- --------------------------------------------------------
 
@@ -142,8 +141,7 @@ INSERT INTO `works_on` (`usn`, `project_id`) VALUES
 ('1BY16CS084', 1024),
 ('1BY16CS062', 1024),
 ('1BY15CS115', 1024),
-('1BY16CS006', 1007),
-('1BY16CS111', 1007);
+('1BY16CS006', 1007);
 
 --
 -- Indexes for dumped tables
