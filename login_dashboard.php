@@ -9,7 +9,7 @@
 		<title>Project Portal</title>
 		<link rel="stylesheet" type="text/css" href="css/a11.css">
 	</head>
-	<body style="background-image: url('img/bmsit_back.jpg'); background-size: cover;">
+	<body style="background-image: url('img/College.JPG'); background-size: cover; background-attachment: fixed;">
 		<div class="container">
 			<div class="card">
 				<div class="face face1">
@@ -20,9 +20,9 @@
 				</div>
 				<div class="face face2">
 					<div class="content">
-						<p>The Admin page gives you access to the Analytics administrative features. Click below Use these tools to create new properties, change user permissions, add integrations,import data.   
+						<p>The Admin Page gives access to exclusive editing features for the system. Click below and login to add new projects, change project status and much more!   
 						</p>	
-						<a href='modules/login.php'>Click Here</a>
+						<a href='modules/login.php'>Login Here</a>
 					</div>	
 				</div>
 				</div>
@@ -35,20 +35,13 @@
 				</div>
 				<div class="face face2">
 					<div class="content">
-						<p>The login page allows a user to gain access to an application by entering their username and password or by authenticating using a social media login. 
-						</p>	
+						<p>The Student Page gives an interface to select a project and view team mates. Click below and login to choose your project! </p>	
 
-						<a href='slogin.php'>Click Here</a> 
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            
-                        </a>    
-                            </div>
-					</div>	
-			</div>
-			</div>
+						<a href='slogin.php'>Login Here</a> 
+                                   
+                                                   
+					</div>
+				</div>
 		 </div>
 	</body>
 
