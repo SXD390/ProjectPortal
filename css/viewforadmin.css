@@ -48,12 +48,18 @@ table {
   font-size: 14px;
   font-weight: 700;
 }
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+  background-color:chocolate;
+  color: black;
+}
 
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
-  color:black;
-  
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 .scrollit {

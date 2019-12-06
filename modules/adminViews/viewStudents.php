@@ -39,7 +39,7 @@ if(!isset($_SESSION['Alogin']))
                                             <a href="#" id="side2">View Students</a>
                                             <a href="addprojects.php" id="side3">Add Projects</a>
                                             <a href="addStudents.php" id="side4">Add Students</a>
-                                            <a href="modifyStudentTeam.php" id="side5">Modify Student Team</a>
+                                            <a href="modifyStudentTeam.php" id="side5">Approve Team Changes</a>
                                             <a href="modifyProjects.php" id="side6">Modify Projects</a>
                                         </div>                  
                                     </div>
