@@ -68,7 +68,7 @@ body{
 }
 .container_2{
         width: 210px;
-        height: 550px;
+        height: 600px;
         font-size: 30px;
         color:chocolate;
         left: 0px;
@@ -131,6 +131,11 @@ body{
   
   #side6 {
     top: 390px;
+    color: darkgoldenrod;
+    background-color:black;
+  }
+  #side7 {
+    top: 480px;
     color: darkgoldenrod;
     background-color:black;
   }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2019 at 06:01 AM
+-- Generation Time: Dec 06, 2019 at 02:20 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -116,12 +116,12 @@ INSERT INTO `student` (`usn`, `name`, `email`, `password`) VALUES
 ('1BY15CS115', 'Harshit Gupta', 'gupta@gmail.com', 'student'),
 ('1BY16CS006', 'Akshay Padesur', 'akshay@gmail.com', 'student'),
 ('1BY16CS062', 'Pranav Raikote', 'pranavraikote@gmail.com', 'student'),
-('1By16cs079', 'Shwetha', 'shwetha@bmsit.in', 'student'),
+('1By16cs079', 'Shwetha', 'shwetha@gmail.in', 'student'),
 ('1By16cs083', 'Spooorthy', 'spoorthy@bmsit.in', 'domlur'),
 ('1BY16CS084', 'Sudarshan Venkatesh', 'sudarshanravi13@gmail.com', 'student'),
 ('1BY16CS085', 'Suman', 'suman@gmail.com', 'student'),
-('1BY16CS086', 'Sumanth NC', 'sumanthnc@gmail.com', 'student'),
-('1BY16CS111', 'Manoj Kumar', 'manoj@bmsit.in', 'student');
+('1BY16CS086', 'Sumanth NCC', 'sumanthnc@gmail.com', 'student'),
+('1BY16CS111', 'Manoj Kumar', 'manoj@bdmsit.in', 'student');
 
 -- --------------------------------------------------------
 
@@ -131,19 +131,20 @@ INSERT INTO `student` (`usn`, `name`, `email`, `password`) VALUES
 
 CREATE TABLE `works_on` (
   `usn` varchar(10) NOT NULL,
-  `project_id` int(11) NOT NULL
+  `project_id` int(11) NOT NULL,
+  `request` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `works_on`
 --
 
-INSERT INTO `works_on` (`usn`, `project_id`) VALUES
-('1BY16CS084', 1024),
-('1BY16CS062', 1024),
-('1BY15CS115', 1024),
-('1BY16CS006', 1007),
-('1BY16CS111', 1007);
+INSERT INTO `works_on` (`usn`, `project_id`, `request`) VALUES
+('1BY16CS062', 1024, 'NO'),
+('1BY15CS115', 1024, 'NO'),
+('1BY16CS006', 1007, 'NO'),
+('1BY16CS111', 1007, 'NO'),
+('1By16cs083', 1017, 'NO');
 
 --
 -- Indexes for dumped tables

@@ -3,7 +3,12 @@
         window.location.href="student.php?uid="+id;
     }
 </script>
+<style rel="stylesheet" type="text/css">
+    th{
+        
+    }
 
+</style>
 <?php
     if(isset($_POST['sub_btn'])){
         $host = "localhost";
@@ -32,10 +37,11 @@
 	<form method="POST" >
 		<table id="myTable_1">
 			<tr>
-				<th>Project ID <button onclick="sortTable_0('myTable_1')">↑</button><button onclick="sortRTable_0('myTable_1')">↓</button> </th>
+				<th> Project ID <button onclick="sortTable_0('myTable_1')">↑</button><button onclick="sortRTable_0('myTable_1')">↓</button> </th>
 				<th> Project Title <button onclick="sortTable_1('myTable_1')">↑</button><button onclick="sortRTable_1('myTable_1')">↓</button> </th>
 				<th> Subject Code <button onclick="sortTable_2('myTable_1')">↑</button><button onclick="sortRTable_2('myTable_1')">↓</button></th>
                 <th> Potential Teamates </th>
+                <th>Actions</th>
             </tr>
 			<?php
 		    	$host = "localhost";
@@ -55,14 +61,14 @@
                             echo $t_n;
                             array_push($teamates,$t_n);
                         }
-                    echo "</td><td><input type='button' value='Choose Group' onClick='setSess(".$row['project_id'].")'></td></tr>";
+                    echo "</td><td><input type='button' value='Choose Group' class='btn btn-warning' onClick='setSess(".$row['project_id'].")'></td></tr>";
 				}
             ?>
             
         </table>
 	
 </div>
-<input type="submit" name="sub_btn"  onClick="setSess()" value="JOIN!!">
+<input type="submit" name="sub_btn" class='btn btn-primary' onClick="setSess()" value="JOIN!!">
 </form>
 <br><br>
 
