@@ -11,7 +11,7 @@ body
 }
 .container
 {
-	width: 1000px;
+	width: 850px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -40,7 +40,7 @@ body
 
 .container .card:hover  .face.face1
 {	
-	background: #ff7b00;
+	background: orange;
 	transform: translateY(0);
 }
 .container .card .face.face1 .content

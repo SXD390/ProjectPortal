@@ -15,7 +15,7 @@
 				<div class="face face1">
 					<div class="content">
 						<img src="img/img2.png">
-						<h3>ADMIN</h3>	
+						<h3>ADMINISTRATOR</h3>	
 					</div>	
 				</div>
 				<div class="face face2">
