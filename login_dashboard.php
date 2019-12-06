@@ -6,16 +6,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Project Portal</title>
+		<title>Login | Project Portal</title>
+		<link rel="icon" href="img/BMSIT_1.ico">
 		<link rel="stylesheet" type="text/css" href="css/a11.css">
 	</head>
-	<body style="background-image: url('img/College.JPG'); background-size: cover; background-attachment: fixed;">
+
+	<body style="background-image: url('img/College.JPG'); background-size: cover;">
 		<div class="container">
 			<div class="card">
 				<div class="face face1">
 					<div class="content">
-						<img src="img/img2.png">
-						<h3>ADMINISTRATOR</h3>	
+						<img src="img/Admin.png" id="img1">
+						<h3 id="t">ADMINISTRATOR</h3>	
 					</div>	
 				</div>
 				<div class="face face2">
@@ -29,7 +31,7 @@
 			<div class="card" >
 				<div class="face face1">
 					<div class="content">
-						<img src="img/img1.png">
+					<img src="img/Student.png" id="img2">
 						<h3>STUDENT</h3>	
 					</div>	
 				</div>
@@ -43,5 +45,10 @@
 					</div>
 				</div>
 		 </div>
+
+
+		</div>
+
 	</body>
+</html>
 
