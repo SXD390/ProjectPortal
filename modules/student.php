@@ -86,7 +86,7 @@
 								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Project Name :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$project_name."</div></div></div><br>";
 								echo "<div class='row'><div class='col-md-6'><div class='h3_custom'>Subject Code  :</div></div><div class='col-md-6'> <div class='h2_custom'> ".$sub_code."</div></div></div><br>";
 								
-								echo "<input type='button' class='btn_req' value='Request for a Change'/> ";
+								echo "<div><input class='btn_req_change' type='button' value='Request for a Change'/></div> ";
 								
 								echo "<br><br><div class='h4_custom'>Details of your Team</div><br>";
 								echo "<table class=''>";
