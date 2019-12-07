@@ -62,10 +62,6 @@ $(document).ready(function($)
 		tbl +='</table>';
 		//--->create data table > end
 
-		//add new table row
-		tbl +='<div class="text-center">';
-			tbl +='<span class="btn btn-primary btn_new_row">Add New Row</span>';
-		tbl +='<div>';
 
 		//out put table data
 		$(document).find('.tbl_user_data').html(tbl);
