@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>Student Login Form</title>
+<link rel="icon" href="img/BMSIT_1.ico">
+<title>Student | Project Portal</title>
     <?php 
         session_start();
         @session_destroy();

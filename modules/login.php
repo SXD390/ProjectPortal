@@ -9,8 +9,11 @@
 ?>
 <html>
 <head>
-<title>Login Form Design</title>
+    <link rel="icon" href="../img/BMSIT_1.ico">
+    <title>Admin | Project Portal</title>
+
     <link rel="stylesheet" type="text/css" href="../css/logincss.css">
+    
     <style>
         .a1{
             position: absolute;
