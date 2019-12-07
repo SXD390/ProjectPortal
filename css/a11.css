@@ -2,18 +2,20 @@ body
 {
 	margin: 0;
 	padding: 0;
-	min-height: 130vh;
-	background: #333;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Nunito', sans-serif;
+ 	justify-content: center;
+ 	align-items: center;
+ 	min-height: 100vh;
+	background: orange;
+	background-size: 100% 780px;
+	background-image: url('../img/College.JPG');
+ 	font-family: 'Nunito', sans-serif; 	
 }
 .container
 {
-	width: 60%;
+	width: 65%;
 	margin-top: -120px;
-	height: 60%;
+	height: 90%;
 	display: flex;
 	justify-content: space-between;
 }

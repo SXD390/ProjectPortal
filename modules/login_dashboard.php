@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/a11.css">
 	</head>
 
-	<body style="background-image: url('../img/College.JPG'); background-size: cover;">
+	<body>
 		<div class="container">
 			<div class="card">
 				<div class="face face1">
