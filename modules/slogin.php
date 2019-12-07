@@ -1,7 +1,8 @@
 
 <html>
 <head>
-<title>Student Login Form</title>
+<link rel="icon" href="../img/BMSIT_1.ico">
+<title>Student | Project Portal</title>
     <?php 
         session_start();
         @session_destroy();
@@ -28,7 +29,7 @@
             <input type="text" name="susername" placeholder="Enter USN">
             <p>Password</p>
             <input type="password" name="spassword" placeholder="Enter Password">
-            <input type="submit" name="" value="Login">
+            <input type="submit" name="" value="Login" id="login">
         </form>
      </div>
 
