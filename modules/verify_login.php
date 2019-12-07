@@ -25,7 +25,7 @@ if(isset($_POST['username'])) {
 		
 	}
 	else{
-		header("location: ../login_dashboard.php");
+		header("location: login_dashboard.php");
 		//echo "<script type='text/javascript'> document.getElementById('login_status').innerHTML='Invalid Credentials';</script>";
 	}
 }

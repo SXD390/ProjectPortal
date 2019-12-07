@@ -22,7 +22,7 @@
 		session_start();
 		if(!isset($_SESSION['student'])){
 			echo "<script>alert('PLEASE LOGIN!');</script>";
-			header("location: ../slogin.php");
+			header("location: slogin.php");
 		}
 		else{
 			$na = $_SESSION['student'][0];
@@ -64,7 +64,7 @@
 					</div>
 				</div>
 				<div class="col-md-2">
-					<a href="../slogin.php"><img style="margin-top:30px;width:67px;height:67px;" src="../img/back.png"></a>
+					<a href="slogin.php"><img style="margin-top:30px;width:67px;height:67px;" src="../img/back.png"></a>
 				</div>
 			</div>
 			<br><br>

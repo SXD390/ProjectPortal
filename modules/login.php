@@ -21,7 +21,7 @@
 <body>
     <div class="row">
         <div class="col-md-12">
-            <div class ="container_cust"><p><a class="a1" href="../login_dashboard.php"><img style="width:67px;height:67px;" src="../img/back.png"></a></p></div>
+            <div class ="container_cust"><p><a class="a1" href="login_dashboard.php"><img style="width:67px;height:67px;" src="../img/back.png"></a></p></div>
         </div>
     </div>
     <div class="loginbox">

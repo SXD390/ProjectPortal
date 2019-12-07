@@ -1,6 +1,4 @@
 <?php
-
-
 $host = "localhost";
 $user="root";
 $password="";
@@ -27,7 +25,7 @@ if(isset($_POST['susername'])) {
 		header('location: student.php');
 	}
 	else{
-		echo "<script type='text/javascript'> alert('Invalid Credentials');window.location = '../slogin.php';</script>";
+		echo "<script type='text/javascript'> alert('Invalid Credentials');window.location = 'slogin.php';</script>";
 		
 		
 	}

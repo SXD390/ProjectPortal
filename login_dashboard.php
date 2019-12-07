@@ -7,16 +7,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Login | Project Portal</title>
-		<link rel="icon" href="img/BMSIT_1.ico">
-		<link rel="stylesheet" type="text/css" href="css/a11.css">
+		<link rel="icon" href="../img/BMSIT_1.ico">
+		<link rel="stylesheet" type="text/css" href="../css/a11.css">
 	</head>
 
-	<body style="background-image: url('img/College.JPG'); background-size: cover;">
+	<body style="background-image: url('../img/College.JPG'); background-size: cover;background-size: 100% 60%;">
 		<div class="container">
 			<div class="card">
 				<div class="face face1">
 					<div class="content">
-						<img src="img/Admin.png" id="img1">
+						<img src="../img/Admin.png" id="img1">
 						<h3 id="t">ADMINISTRATOR</h3>	
 					</div>	
 				</div>
@@ -24,14 +24,14 @@
 					<div class="content">
 						<p>The Admin Page gives access to exclusive editing features for the system. Click below and login to add new projects, change project status and much more!   
 						</p>	
-						<a href='modules/login.php'>Login Here</a>
+						<a href='login.php'>Login Here</a>
 					</div>	
 				</div>
 				</div>
 			<div class="card" >
 				<div class="face face1">
 					<div class="content">
-					<img src="img/Student.png" id="img2">
+					<img src="../img/Student.png" id="img2">
 						<h3>STUDENT</h3>	
 					</div>	
 				</div>
