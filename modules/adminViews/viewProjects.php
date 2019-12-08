@@ -43,6 +43,7 @@ if(!isset($_SESSION['Alogin']))
                 <div class="col-md-9" style="background-color: rgba(44, 62, 80,0.79); height:600px;">
                     <div class="contain_in">
                          <input type="text" id="myInput_1" onkeyup="myFunction(this.id,'myTable_1')" placeholder="Search for Project names.." >
+                         <input type="submit" id="pdf" value="PDF" onclick="window.open('report.php')"/>
                     </div>
                     <div class="scrollit">
                         <table id="myTable_1">
