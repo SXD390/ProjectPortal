@@ -52,6 +52,7 @@ if(!isset($_SESSION['Alogin']))
                                             <br>
                                             <h2 class='student_view_header'>Registered Students</h2>
                                             <input type="text" id="myInput_1" onkeyup="myFunction(this.id,'myTable_1')" placeholder="Search for names.." >
+                                            <input type="submit" id="pdf" class="btn btn-primary" style="margin:20px;" value="PDF" onclick="window.open('student_pdf.php')"/>
                                             <div class="scrollit">
                                                 <table id="myTable_1">
                                                     <tr>
