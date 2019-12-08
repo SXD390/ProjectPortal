@@ -10,11 +10,11 @@ class MyPdf extends FPDF{
 		$this->Ln();
 		$this->Cell(60);
 		$this->SetFont('Arial','B',13);
-		$this->Cell(176,10,'YELAHANKHA, BANGALORE - 560064','C');
+		$this->Cell(176,10,'YELHANKA, BANGALORE - 560064','C');
 		$this->Ln();
 		$this->Cell(54);
 		$this->SetFont('Arial','B',15);
-		$this->Cell(176,10,'COMPUTER SCIENCE & ENGG. DEPT','C');
+		$this->Cell(176,10,'COMPUTER SCIENCE & ENGINEERING DEPT','C');
 		$this->SetFont('Times','B',18);
 		$this->Ln(20);
 		$this->Cell(55);
