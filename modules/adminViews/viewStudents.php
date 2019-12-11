@@ -80,7 +80,7 @@ if(!isset($_SESSION['Alogin']))
                                         </div>
                                         <div class="col-md-6">
                                         <br>
-                                            <h2 class='student_view_header'>Un-Registered Students</h2>
+                                            <h2 class='student_view_header'>Un-Registered Students</h2><br>
                                             <input type="text" id="myInput_2" onkeyup="myFunction(this.id,'myTable_2')" placeholder="Search for names..">
                                             <div class="scrollit">
                                                 <table id="myTable_2">
